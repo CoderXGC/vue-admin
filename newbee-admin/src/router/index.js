@@ -1,4 +1,5 @@
 // router/index.js
+import AddGood from '@/views/AddGood.vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Index from '@/views/Index.vue'
 
@@ -7,8 +8,14 @@ const router = createRouter({
   routes: [
     {
       path: '/',
+      name: 'index',
       component: Index
-    }
+    },
+        {
+          path: '/add',
+         name: 'add',
+         component: AddGood
+       }
   ]
 })
 

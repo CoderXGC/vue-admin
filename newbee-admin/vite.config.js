@@ -54,6 +54,6 @@ export default ({ mode }) => defineConfig({
         rewrite: path => path.replace(/^\/api/, '') // 重写 api 为 空，就是去掉它
       }
     }
-  }//,
+  },
  // base: mode == 'development' ? './' : (mode == 'beta' ? '//s.baidu.com/beta/xxx' : '//s.baidu.com/release/xxx') // 静态资源路径配置
 })
